@@ -1,4 +1,11 @@
 /* Effect 1: Slide in on top */
+
+// SidebarTransitions Scss
+// Widgetware.com
+// Licensed under MIT Open Source
+
+@import "global";
+
 .st-effect-1{
 	&.st-menu {
 		visibility: visible;
