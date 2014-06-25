@@ -1,5 +1,11 @@
 /* Effect 9: Scale down pusher */
 
+// SidebarTransitions Scss
+// Widgetware.com
+// Licensed under MIT Open Source
+
+@import "global";
+
 .st-effect-9{
 	&.st-container {
 		-webkit-perspective: 1500px;

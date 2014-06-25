@@ -1,5 +1,11 @@
 /* Effect 8: 3D rotate out */
 
+// SidebarTransitions Scss
+// Widgetware.com
+// Licensed under MIT Open Source
+
+@import "global";
+
 .st-effect-8{
 	&.st-container {
 		-webkit-perspective: 1500px;

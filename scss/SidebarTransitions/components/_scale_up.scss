@@ -1,5 +1,11 @@
 /* Effect 10: Scale up */
 
+// SidebarTransitions Scss
+// Widgetware.com
+// Licensed under MIT Open Source
+
+@import "global";
+
 .st-effect-10{
 	&.st-container {
 		-webkit-perspective: 1500px;

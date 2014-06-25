@@ -1,5 +1,11 @@
 /* Effect 14: Delayed 3D rotate */
 
+// SidebarTransitions Scss
+// Widgetware.com
+// Licensed under MIT Open Source
+
+@import "global";
+
 .st-effect-14{
 	&.st-container {
 		-webkit-perspective: 1500px;

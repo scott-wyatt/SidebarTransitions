@@ -1,4 +1,11 @@
 /* Effect 4: Slide along */
+
+// SidebarTransitions Scss
+// Widgetware.com
+// Licensed under MIT Open Source
+
+@import "global";
+
 .st-effect-4{
 	&.st-menu-open .st-pusher {
 		-webkit-transform: translate3d(300px, 0, 0);

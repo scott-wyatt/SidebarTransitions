@@ -18,8 +18,8 @@ $sidebar-margin-right: 0 !default;
 // Controlling the styles for the title in the sidebar
 $sidebar-title-weight: $font-weight-normal !default;
 $sidebar-title-font-size: rem-calc(17) !default;
-$sidebar-title-color: #fff;
-$sidebar-title-padding: rem-calc(16);
+$sidebar-title-color: #fff !default;
+$sidebar-title-padding: rem-calc(16) !default;
 
 // Set the link colors and styles for top-level nav
 $sidebar-link-color: #fff !default;
@@ -41,6 +41,9 @@ $sidebar-link-bg-color-hover: #555555 !default;
 $sidebar-link-font-family: $body-font-family !default;
 $sidebar-link-text-transform: none !default;
 $sidebar-link-padding: $sidebar-height / 3 !default;
+
+
+
 
 .st-menu-open .st-pusher::after {
 	width: 100%;
@@ -88,6 +91,12 @@ $sidebar-link-padding: $sidebar-height / 3 !default;
 		text-shadow: 0 0 1px rgba(0,0,0,0.1);
 		font-weight: 300;
 		font-size: $sidebar-title-font-size;
+
+		
+	}
+	
+	a.logo{
+		display: block;
 	}
 
 	ul{ 

@@ -1,5 +1,11 @@
 /* Effect 11: Scale and rotate pusher */
 
+// SidebarTransitions Scss
+// Widgetware.com
+// Licensed under MIT Open Source
+
+@import "global";
+
 .st-effect-11{
 	&.st-container {
 		-webkit-perspective: 1500px;

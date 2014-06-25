@@ -1,5 +1,11 @@
 /* Effect 6: Rotate pusher */
 
+// SidebarTransitions Scss
+// Widgetware.com
+// Licensed under MIT Open Source
+
+@import "global";
+
 .st-effect-6{
 	&.st-container {
 		-webkit-perspective: 1500px;
