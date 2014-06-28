@@ -32,7 +32,7 @@ $sidebar-link-weight: $font-weight-normal !default;
 $sidebar-link-font-size: rem-calc(13) !default;
 $sidebar-link-hover-lightness: -10% !default; // Darken by 10%
 $sidebar-link-bg: $topbar-bg !default;
-$sidebar-link-bg-hover: #272727 !default;
+$sidebar-link-bg-hover: rgba(0,0,0,0.2) !default;
 $sidebar-link-bg-color-hover: #555555 !default;
 
 //$sidebar-link-bg-active: $primary-color !default;
@@ -77,13 +77,6 @@ $sidebar-link-padding: $sidebar-height / 3 !default;
 		-webkit-transition: opacity 0.5s;
 		transition: opacity 0.5s;
 	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-
 	.title, h2 {
 		margin: 0;
 		padding: $sidebar-title-padding;
@@ -92,35 +85,52 @@ $sidebar-link-padding: $sidebar-height / 3 !default;
 		font-weight: 300;
 		font-size: $sidebar-title-font-size;
 
-		
-	}
-	
-	a.logo{
-		display: block;
-	}
-
-	ul{ 
-		li a {
-			display: block;
-			padding: 1em 1em 1em 1.2em;
-			outline: none;
-			box-shadow: inset 0 -1px rgba(0,0,0,0.2);
-			color: $sidebar-link-color;
-			text-transform: uppercase;
-			text-shadow: 0 0 1px rgba(255,255,255,0.1);
-			letter-spacing: 1px;
-			font-weight: 400;
-			-webkit-transition: background 0.3s, box-shadow 0.3s;
-			transition: background 0.3s, box-shadow 0.3s;
-
-			&:hover{
-				background: rgba(0,0,0,0.2);
-				box-shadow: inset 0 -1px rgba(0,0,0,0);
-				color: $sidebar-link-color-hover;
+		& a.logo {
+			
+			position: relative;
+			display: block; 
+			
+			&::after {
+				content: ""; 
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			 	left:0;
 			}
 		}
+	}
+	ul{ 
+		margin: 0;
+		padding: 0;
+		list-style: none;
 
-		li:first-child a {
+		> li { 
+			&.active > a {
+				
+			}
+			& > a {
+				display: block;
+				padding: 1em 1em 1em 1.2em;
+				outline: none;
+				box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+				color: $sidebar-link-color;
+				text-transform: $sidebar-link-text-transform;
+				text-shadow: 0 0 1px rgba(255,255,255,0.1);
+				letter-spacing: 1px;
+				font-weight: 400;
+				-webkit-transition: background 0.3s, box-shadow 0.3s;
+				transition: background 0.3s, box-shadow 0.3s;
+
+				&:hover{
+					background: $sidebar-link-bg-hover;
+					box-shadow: inset 0 -1px rgba(0,0,0,0);
+					color: $sidebar-link-color-hover;
+				}
+			}	
+		}
+
+		> li:first-child a {
 			box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
 		}
 	}

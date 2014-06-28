@@ -4,9 +4,11 @@
     	function is_touch_device() {  
 		  try {
 		    document.createEvent("TouchEvent");
-		    return true;  
+		    return true; 
+		    console.log("Touchy"); 
 		  } catch (e) {  
-		    return false;  
+		    return false;
+		    console.log("No Touch");  
 		  }  
 		}
 
